@@ -401,7 +401,7 @@ const handlers = {
 
 exports.handler = function handler(event, context) {
   const alexa = alexaSDK.handler(event, context);
-  alexa.APP_ID = appId;
+  alexa.appId = appId;
   alexa.registerHandlers(handlers);
   alexa.execute();
 };

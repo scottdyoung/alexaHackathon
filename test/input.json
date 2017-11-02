@@ -1,22 +1,52 @@
 {
   "session": {
-    "sessionId": "SessionId.Session1",
+    "new": true,
+    "sessionId": "SessionId.05feea2a-eed6-49ef-9f39-69cde7292773",
     "application": {
       "applicationId": "amzn1.ask.skill.16f10020-ed0b-4c25-a2cc-598805cf7bca"
     },
+    "attributes": {},
     "user": {
-      "userId": "amzn1.ask.account.testaccount1"
-    },
-    "new": true
+      "userId": "arn:aws:iam::985682229154:user/debugUser"
+    }
   },
   "request": {
     "type": "IntentRequest",
-    "requestId": "EdwRequestId.TestSession1",
-    "timestamp": "2016-05-19T01:07:55Z",
+    "requestId": "EdwRequestId.2ebd4e3e-04a8-4388-a92d-f662da47b3ab",
     "intent": {
-      "name": "LaunchIntent"
+      "name": "AddRecipeIntent",
+      "slots": {
+        "LongOrQuick": {
+          "name": "LongOrQuick",
+          "value": "Long"
+        },
+        "RecipeName": {
+          "name": "RecipeName",
+          "value": "foo"
+        },
+        "RecipeLocation": {
+          "name": "RecipeLocation"
+        }
+      }
     },
-    "locale": "en-US"
+    "locale": "en-US",
+    "timestamp": "2017-11-01T21:50:49Z"
+  },
+  "context": {
+    "AudioPlayer": {
+      "playerActivity": "IDLE"
+    },
+    "System": {
+      "application": {
+        "applicationId": "amzn1.ask.skill.16f10020-ed0b-4c25-a2cc-598805cf7bca"
+      },
+      "user": {
+        "userId": "arn:aws:iam::985682229154:user/debugUser"
+      },
+      "device": {
+        "supportedInterfaces": {}
+      }
+    }
   },
   "version": "1.0"
 }
